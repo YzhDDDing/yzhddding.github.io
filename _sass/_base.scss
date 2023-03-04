@@ -49,6 +49,18 @@ table.table a {
   }
 }
 
+icon {
+
+  td,
+  th {
+    color: var(--global-text-color);
+  }
+
+  td {
+    font-size: 1rem;
+  }
+}
+
 icon.icon a {
   color: var(--global-text-color);
 
