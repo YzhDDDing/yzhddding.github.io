@@ -3,68 +3,95 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+<div class="post">
+  <header class="post-header">
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
+  <article>
+    {% if page.profile -%}
+    <div class="icon width:100%">
+      <icon class="icon">
+        <tr>
+          <td width="30%">
+            <div class="profile-img">
+              {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
               {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
               {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
+              {% include figure.html
+              path=profile_image_path
               class=profile_image_class
               alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
+              {% endif -%}
             </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
-          <!-- News -->
-          {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-              
+          </td>
+          <td width="5%"></td>
+          <td width="60%">
+            <div class="profile-content">
+              <p>
+              <h1 class="name">
+                {% if site.title == "blank" -%}<span class="font-weight-bold"> {{ site.first_name }}
+                  {{ site.last_name }} </span>{%- else -%}{{ site.title }}{%- endif %}
+              </h1>
+              <br>
+              <span style="font-size: 16px;">{{ page.profile.degree }}</span><br>
+              <span style="font-size: 16px;">{{ page.profile.institute }}</span><br>
+              <span style="font-size: 16px;">{{ page.profile.location }}</span><br>
+              <span style="font-size: 16px;">Email: yzhddding@gmail.com</span><br>
+              <br>
             </div>
-          {%- endif %}
-        </article>
+            <div class="icon" style="font-size: 1.8rem;">
+              <a href=" https://github.com/YzhDDDing/" title="Github"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=BUuxUVgAAAAJ&hl=zh-CN" title="Google Scholar"><i
+                  class="ai ai-google-scholar"></i></a>
+              <a href="https://mail.google.com/" title="Email"><i class="fas fa-envelope"></a>
+            </div>
+          </td>
+        </tr>
+
+      </icon>
+    </div>
+    {%- endif %}
+
+    <!-- <div class="clearfix">
+      {{ content }}
+    </div> -->
+
+    <!-- News 
+    {% if page.news -%}
+    <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+    {%- include news.html %}
+    {%- endif %}-->
+
+    <h3><b>About Me</b></h3>
+    <div class="Aboutme">
+      {{ content }}
+    </div>
+
+    <!-- Selected papers -->
+    {% if page.selected_papers -%}
+    <h3><a "href=" {{ '/publications/' | relative_url }}" style="color: inherit;"><b>Publications</b></a></h3>
+    {%- include selected_papers.html %}
+    {%- endif %}
+
+    <!-- Social -->
+    <!-- {%- if page.social %}
+    <div class="social">
+      <div class="contact-icons">
+        {% include social.html %}
+      </div>
+
+      <div class="contact-note">
+        {{ site.contact_note }}
+      </div>
+
+    </div>
+    {%- endif %} -->
+  </article>
 
 </div>
