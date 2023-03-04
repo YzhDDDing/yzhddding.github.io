@@ -13,6 +13,7 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
     gem 'jekyll-twitter-plugin'
+    gem 'mini_racer'
     gem 'jemoji'
     gem 'unicode_utils'
     gem 'webrick'
