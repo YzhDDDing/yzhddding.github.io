@@ -4,9 +4,9 @@ layout: default
 
 <!-- about.html -->
 <div class="post">
-  <!-- <header class="post-header">
+  <header class="post-header">
     <p class="desc">{{ page.subtitle }}</p>
-  </header> -->
+  </header>
 
   <article>
     {% if page.profile -%}
@@ -75,7 +75,7 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers -%}
-    <h3><a "href=" {{ '/publications/' | relative_url }}" style="color: inherit;"><b>Publications</b></a></h3>
+    <h3><a "href=" {{ '/publications/' | relative_url }}" style="color: inherit;"><b>Selected Publications</b></a></h3>
     {%- include selected_papers.html %}
     {%- endif %}
 
