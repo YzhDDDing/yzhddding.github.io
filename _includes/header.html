@@ -16,6 +16,9 @@
         {%- if site.last_name -%}
         <span class="font-weight-bold">{{- site.last_name -}}&nbsp;</span>
         {%- endif -%}
+        {%- if site.Chinese_Name -%}
+        <span style="font-family: STKaiti">{{- site.Chinese_Name -}}</span>
+        {%- endif -%}
         {%- else -%}
         {{- site.title -}}
         {%- endif -%}
