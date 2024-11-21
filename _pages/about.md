@@ -4,7 +4,7 @@ title: About
 permalink: /
 
 profile:
-  name: Zehong Yu
+  name: Zehong Yu (喻泽弘)
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   email: yzhddding@gmail.com
