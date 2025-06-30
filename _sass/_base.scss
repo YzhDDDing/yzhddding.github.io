@@ -417,6 +417,8 @@ footer.sticky-bottom {
         background-color: #c92626 !important;
         text-align: center;
         display: inline-block;
+        width: 100px !important;
+        min-width: 100px !important;
       }
     }
   }
