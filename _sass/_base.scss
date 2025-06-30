@@ -415,7 +415,7 @@ footer.sticky-bottom {
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: #c92626 !important;
-        width: 80px;
+        width: 100px;
         text-align: center;
         display: inline-block;
       }
@@ -695,6 +695,9 @@ footer.sticky-bottom {
       }
 
       .badges {
+        width: 100px;
+        text-align: center;
+        display: inline-block;
         span {
           display: inline-block;
           color: $black-color;
