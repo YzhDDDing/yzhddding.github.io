@@ -415,6 +415,9 @@ footer.sticky-bottom {
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: #c92626 !important;
+        width: 80px;
+        text-align: center;
+        display: inline-block;
       }
     }
   }
