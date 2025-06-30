@@ -623,13 +623,12 @@ footer.sticky-bottom {
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
-        width: 100px;
         abbr {
           display: inline-block;
           background-color: var(--global-item-color);
           padding-left: 1rem;
           padding-right: 1rem;
-
+          width: 100px;
           a {
             color: white;
 
