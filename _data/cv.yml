@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 29th March 2000
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
@@ -16,13 +16,13 @@
       year: 2024 - now
       description:
         - PhD student in Software Engineering
-        - Supervisor: Prof. [Yu Jiang](https://sites.google.com/site/jiangyu198964/home)
+        - Supervisor: Prof. Yu Jiang
     - title: Master
       institution: Tsinghua University, Beijing, China
       year: 2021 - 2024
       description:
         - Master student in Software Engineering
-        - Supervisor: Prof. [Yu Jiang](https://sites.google.com/site/jiangyu198964/home)
+        - Supervisor: Prof. Yu Jiang
     - title: Bachelor
       institution: Southeast University, Nanjing, China
       year: 2017 - 2021
